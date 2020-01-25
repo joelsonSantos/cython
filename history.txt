@@ -1,0 +1,17 @@
+ 2048  python -m timeit -s 'import primes' 'primes(1000)'
+ 2050  python -m timeit -s 'import primes as p' 'p.primes(1000)'
+ 2057  python -m timeit -s 'import primes as p' 'p.primes(1000)'
+ 2058  python -m timeit -s 'import primes_python as p' 'p.primes(10)'
+ 2059  python -m timeit -s 'import primes_python as p' 'p.primes_python(10)'
+ 2060  python -m timeit -s 'import primes_python as p' 'p.primes_python(100)'
+ 2061  python -m timeit -s 'import primes_python as p' 'p.primes_python(1000)'
+ 2062  python -m timeit -s 'import primes as p' 'p.primes(1000)'
+ 2063  python -m timeit -s 'import primes_python as p' 'p.primes_python(100)'
+ 2064  python -m timeit -s 'import primes as p' 'p.primes(100)'
+ 2066  python -m timeit -s 'import primes_python_noncompiled'
+ 2067  python -m timeit -s 'import primes_python_noncompiled as p' 'p.primes_python(10)'
+ 2068  python -m timeit -s 'import primes_python_noncompiled as p' 'p.primes_python(100)'
+ 2069  python -m timeit -s 'import primes_python_noncompiled as p' 'p.primes_python(1000)'
+ 2070  python -m timeit -s 'import primes_python_noncompiled as p' 'p.primes_python(100)'
+ 2072  history | grep timeit
+ 2073  history | grep timeit >> history.txt
